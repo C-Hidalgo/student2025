@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Registro</title>
+  <style>
+    body {
+      background-color: #d0e4f5;
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    header {
+      text-align: center;
+      padding: 20px;
+    }
+
+    h1 {
+      margin: 0;
+      color: #333;
+    }
+
+    .form-container {
+      background-color: white;
+      max-width: 400px;
+      margin: 50px auto;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+      margin-bottom: 5px;
+      color: #333;
+    }
+
+    input[type="text"],
+    input[type="number"],
+    input[type="email"] {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 20px;
+      box-sizing: border-box;
+    }
+
+    .fecha-container {
+      display: flex;
+      gap: 10px;
+    }
+
+    .fecha-container input {
+      flex: 1;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Registro</h1>
+  </header>
+
+  <div class="form-container">
+    <label for="nombre">Nombre y Apellido</label>
+    <input type="text" id="nombre" placeholder="Ej: Agustín Fernández">
+
+    <label>Fecha de Nacimiento</label>
+    <div class="fecha-container">
+      <input type="number" placeholder="Día" min="1" max="31">
+      <input type="number" placeholder="Mes" min="1" max="12">
+      <input type="number" placeholder="Año" min="1900" max="2100">
+    </div>
+
+    <label for="dni">DNI</label>
+    <input type="number" id="dni" placeholder="Ej: 12345678">
+
+    <label for="email">Gmail</label>
+    <input type="email" id="email" placeholder="ejemplo@gmail.com">
+  </div>
+
+</body>
+</html>
